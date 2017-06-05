@@ -1,0 +1,88 @@
+模块制作说明：
+    Hd$:头部模块第$个
+    Mc$:栏目条模块第$个
+    McBlank:栏目条隐藏时显示
+    Mp$:纯图片模块第$个
+    Mtp$:文字+图片模块第$个
+    Mt$:纯文字模块第$个
+    Mv$:纯视频模块第$个
+    Mtv$:文字+视频模块第$个
+    Mpv$:图片+视频模块第$个
+
+每个模块内要包含 本模块独有js，本模块独有css，本模块独有img ，未模板化的html页面，为了方便使用每个模块内index.js（模板），index.html(静态模块)，js.js(模块独有js)，css.css(本模块独有css也可以是scss编写)，img folder(本模块独有图片)
+
+
+
+  /--专题公共设置--/
+////////////--翔宇标签--///////////////
+    tit：标题，
+    subtit：副标题
+    abstract：摘要
+    cite：引题
+    url：链接地址  //用于跳转链接地址
+    pic：标题对象//头部背景图
+/////////////--cite --////////////////
+    comSet：公共设置
+    skinclass ：皮肤样式 色彩 ，字体字号等皮肤设置，
+    animePage:页面特效，
+    animeMode:''//模块特效，
+    headSet：头部设置
+    mode：模块选择，主要包含排版样式
+    titSwitch:true,//是否显示标题+副标题+摘要，单个设置通过是否发表判断
+    titSwitch:true,//是否显示标题区域
+    moduleHeight:'400',//模块高度
+    titWidth:'300px',//pc端标题区域宽度
+    tittop:'10px',//pc端距离顶部高度
+    sort：总控内的sort为栏目排序和栏目显隐
+    style:内联样式
+    css：行间样式
+    elem:元素模块
+    tit：标题
+    modeSelc：模块选择
+    morepage：更多页面的选择
+    endpage:细览页面选择
+    type：要选择的数据类型
+/////////////--moudle type --////////////////
+    SK$:公共皮肤样式
+    Ap$：页面特效
+    Am$：模块特效
+    Mhd$：头部模块
+    SKhd$：头部样式
+    Mc$：栏目条模块
+    SKc$栏目条样式
+    Mcon$：二级页面的模块
+    Mend$：细览页面的模块
+    SKm$：模块样式
+    M[type][string]:模块选择
+
+    //模块说明
+    Hd$:头部模块第$个
+    Mc$:栏目条模块第$个
+    McBlank:栏目条隐藏时显示
+    Mp$:纯图片模块第$个
+    Mtp$:文字+图片模块第$个
+    Mt$:纯文字模块第$个
+    Mv$:纯视频模块第$个
+    Mtv$:文字+视频模块第$个
+    Mpv$:图片+视频模块第$个
+
+*/
+
+M1:{
+        elem:[
+            {type:'1',num:2,tit:'小标题'},
+            {type:'2',num:2,tit:'小标题'}
+        ],
+        skinclass:'SKm1',
+        css:''
+    },
+modeCon:{
+    typenomal:[
+        {tit:'标题typenomal-1',subtit:'副题',abstract:'摘要',cite:'引题',url:'链接地址' ,pic:'图片地址'},
+        {tit:'标题typenomal-2',subtit:'副题',abstract:'摘要',cite:'引题',url:'链接地址' ,pic:'图片地址'},
+        {tit:'标题typenomal-3',subtit:'副题',abstract:'摘要',cite:'引题',url:'链接地址' ,pic:'图片地址'},
+        {tit:'标题typenomal-4',subtit:'副题',abstract:'摘要',cite:'引题',url:'链接地址' ,pic:'图片地址'},
+        {tit:'标题typenomal-5',subtit:'副题',abstract:'摘要',cite:'引题',url:'链接地址' ,pic:'图片地址'},
+        {tit:'标题typenomal-6',subtit:'副题',abstract:'摘要',cite:'引题',url:'链接地址' ,pic:'图片地址'},
+
+    ],
